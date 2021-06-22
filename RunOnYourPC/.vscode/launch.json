@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            //!python detect.py --weights runs/train/yolov5s_results23/weights/best.pt --img 416 --conf 0.5 --save-txt --save-conf --source 0
+            "args": ["--weights", "runs/train/yolov5s_results23/weights/best.pt", "--img", "1080", "--conf", "0.5", "--save-txt", "--save-conf", "--source", "0", "--agnostic"]
+        }
+    ]
+}
